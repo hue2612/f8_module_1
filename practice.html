@@ -21,50 +21,83 @@
   rel="stylesheet"
 />
 
-    <script type="module" crossorigin src="/f8_module_1/assets/main-DKtRe-7P.js"></script>
-    <link rel="stylesheet" crossorigin href="/f8_module_1/assets/main-BtJNYQkh.css">
+    <script type="module" crossorigin src="/f8_module_1/assets/main-BBuCfj_v.js"></script>
+    <link rel="stylesheet" crossorigin href="/f8_module_1/assets/main-Ckry2wXC.css">
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
   <div class="container">
     <div class="row">
-      <div class="col-3 d-lg-none">
+      <div class="col-3 col-lg-2 d-md-none">
         <div class="logo">
           <img src="./img/Vector.svg" alt="logo" />
           <p>Justice</p>
           <p>Law Firm</p>
         </div>
       </div>
-      <div class="d-none d-lg-block col-lg-6">
+      <div class="d-none d-md-block col-md-4">
         <div class="icon-header">
-          <i class="fa-solid fa-bars"></i>
+          <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden />
+
+          <label for="menu-toggle" class="icon-header">
+            <i class="fa-solid fa-bars"></i>
+          </label>
         </div>
       </div>
-      <div class="col-6 d-lg-none">
+      <div class="col-6 col-lg-6 d-md-none">
         <nav>
           <ul>
-            <li>
-              <a href="#">Home</a><i class="fa-solid fa-chevron-down"></i>
+            <li class="has-submenu">
+              <a href="./index.html">Home</a
+              ><i class="fa-solid fa-chevron-down"> </i>
+              <ul class="submenu">
+                <li><a href="#">Home 1</a></li>
+                <li><a href="#">Home 2</a></li>
+                <li><a href="#">Home 3</a></li>
+              </ul>
             </li>
-            <li>
+            <li class="has-submenu">
               <a href="./about.html">About</a
               ><i class="fa-solid fa-chevron-down"></i>
+              <ul class="submenu">
+                <li><a href="#">About 1</a></li>
+                <li><a href="#">About 2</a></li>
+                <li><a href="#">About 3</a></li>
+              </ul>
             </li>
-            <li>
+            <li class="has-submenu">
               <a href="./practice.html">Practice Areas</a
               ><i class="fa-solid fa-chevron-down"></i>
+              <ul class="submenu">
+                <li><a href="#">Practice 1</a></li>
+                <li><a href="#">Practice 2</a></li>
+                <li><a href="#">Practice 3</a></li>
+              </ul>
             </li>
-            <li><a href="./contact.html">Attorneys</a></li>
-            <li>
+            <li class="has-submenu">
+              <a href="./contact.html">Attorneys</a>
+              <i class="fa-solid fa-chevron-down"></i>
+              <ul class="submenu">
+                <li><a href="#">Attorneys 1</a></li>
+                <li><a href="#">Attorneys 2</a></li>
+                <li><a href="#">Attorneys 3</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
               <a href="./blog.html">Page</a
               ><i class="fa-solid fa-chevron-down"></i>
+              <ul class="submenu">
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+              </ul>
             </li>
           </ul>
         </nav>
       </div>
-      <div class="col-3 col-lg-6">
-        <div class="phone">
+      <div class="col-3 col-lg-4 col-md-8">
+        <div class="tel">
           <p>Call : <span>(000) 123 456 789</span></p>
         </div>
       </div>
@@ -186,7 +219,10 @@
             </p>
           </div>
         </div>
-        <div class="cta">
+
+        <!-- footer -->
+      </div>
+      <div class="cta">
   <div class="container">
     <p>#CTA</p>
     <h2>Dealing With a Issue?</h2>
@@ -198,68 +234,86 @@
     <button class="btn-cta">Get a Consultations</button>
   </div>
 </div>
- <footer>
+ <footer class="footer">
   <div class="container">
-    <div class="row">
-      <div class="col-2 col-lg-12">
-        <div class="justice">
-          <h3>Justice</h3>
-          <ul>
-            <li>
-              <p>Privacy Policy</p>
-            </li>
-            <li>
-              <p>Terms & Conditions</p>
-            </li>
-            <li>
-              <p>Cookie Preferences</p>
-            </li>
-          </ul>
+    <div class="wrap__footer">
+      <div class="row row-cols-md-2 gy-md-3 row-cols-sm-1 gy-sm-5">
+        <div class="col-2">
+          <div class="footer__item">
+            <h3>Justice</h3>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Cookie Preferences</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <div class="footer__item">
+            <h3>Pages</h3>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../about.html">About</a></li>
+              <li><a href="#">Practice Areas</a></li>
+              <li><a href="#">Attorneys</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="footer__item">
+            <h3>Justice</h3>
+            <ul>
+              <li>
+                <p>
+                  50 Harrison Street, PH Suite 445 Hoboken, NJ 07030 (000)
+                  123-4567 yourlawfirm22@gmail.com
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-5">
+          <div class="footer__map">
+            <img src="./img/footer__map.png" alt="map" />
+          </div>
         </div>
       </div>
-
-      <div class="col-2 col-lg-12">
-        <div class="pages">
-          <h3>Pages</h3>
-          <ul>
-            <li>
-              <p>Home</p>
-            </li>
-            <li>
-              <p>About</p>
-            </li>
-            <li>
-              <p>Practice Areas</p>
-            </li>
-            <li>
-              <p>Attorneys</p>
-            </li>
-          </ul>
+    </div>
+    <div class="dash"></div>
+    <div class="wrap__footer-1">
+      <div class="row row-cols-sm-1">
+        <div class="col-6">
+          <div class="footer__logo">
+            <img src="./img/footer__logo.png" alt="logo" />
+            <div class="logo__intro">
+              <p>Copyright © 2022 UI HUT All Rights Reserved</p>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div class="col-3 col-lg-12">
-        <div class="justice">
-          <h3>Justice</h3>
-          <p>
-            50 Harrison Street, PH Suite 445 <br />
-            Hoboken, NJ 07030 <br />(000) 123-4567 <br />
-            yourlawfirm22@gmail.com
-          </p>
+        <div class="col-6">
+          <div class="list__mxh">
+            <div class="mxh">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="mxh">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div class="mxh">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="mxh">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div class="col-5 col-lg-12">
-        <img src="./img/img-ft.png" alt="" />
       </div>
     </div>
   </div>
 </footer>
 
-
-        <!-- footer -->
-
-      </div>
-    </div>
+    </div>
   </body>
 </html>
